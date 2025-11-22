@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elan Imperial</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="position: fixed;  background-color:white;
+    top: 0;
+    width: 100%;
+    z-index: 1000;">
+        <div class="container-fluid" style="background-color: white;">
+          <a class="navbar-brand" href="#">
+            <img src="img/elgllogo.png" alt="Logo" height="50px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Overview">Overview</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#floor-plan">Floor Plan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities">Amenities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#highlights">Highlights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+            </ul>
+            <a class="mlogo" href="" class="">
+              <img src="img/Maison Infratech-29.png" style="margin-right: 120px;" alt="This is a logo" height="70px">
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="bgimg">
+        <div class="container h-100 d-flex align-items-center justify-content-between form-container ">
+          <div class="fm12 col-md-5">
+            <img src="img/elbstlogo.png"  height="70%" width="50%">
+            </div>
+          <div class="fm23 col-md-4">
+            <h1 style="color: rgb(255, 255, 255); font-size: 2.7rem; font-weight: bold; opacity: 1; font-style:normal">Contact Us!</h1>
+              <form class="ft23" action="#" name="submit-to-google-sheet2" method="post" onsubmit="return validation2()">            
+              <div class="input-container">
+                <input type="hidden" name="Formtype" value="BannerForm">
+                  <input type="text" id="name2" placeholder="Enter your Name*" name="Name" autocomplete="off" required>
+                  <div class="e" id="nameError2"></div>
+              </div>
+              <div class="input-container">
+                <input type="email" id="email2" placeholder="Email*" required name="Email" autocomplete="off">
+                <div class="e" id="emailError2"></div>
+            </div>
+            <div class="input-container">
+              <input type="text" maxlength="10" pattern="[0-9]*" id="phone2" name="Phone no." placeholder="Phone no*" required autocomplete="off">
+              <div class="e" id="phoneError2"></div>
+          </div>
+              <div class="input-container">
+                  <input type="text" id="budget2" name="Budget" pattern="[0-9]*" inputmode="numeric" placeholder="Budget*" required autocomplete="off">
+                  <div class="e" id="budgetError2"></div>
+              </div>
+              <div class="btn789">
+                  <button class="btn678" name="submit" type="submit">
+                      Submit
+                      <div class="spinner2" id="spinner2"></div> 
+                  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>   
+    <div class="abt container" id="Overview">
+        <div class="ct">
+            <h1>Elan Imperial</h1>
+            <p>Elan Imperial adorns Gurrgram’s skyline as a premium lifestyle destination and mixed-use development blending hospitality and retail in a surreal fusion. Featuring globally renowned brands and an international 5-star hotel chain with a magnificent atrium, it offers visitors an elite experience of effortless grace and luxury. Conceptualized by the renowned architect BENOY, this project is a timeless masterpiece, seamlessly merging art and architecture.
+          </p>
+        <button onclick="toggleForm()" class="bty">Get Detail</button>
+        </div>
+         <div class="img">
+            <img src="img/el2abt.webp" alt="This is an Image">
+        </div>
+    </div>
+    <div class="bg1 container-fluid">
+        <div class="project-area project-bg2">
+            <div class="container">
+                <div class="project-card project-card-two">
+                    <h2 style="color: #1c3863;">Elan Imperial</h2>
+                    <ul>
+                      <li style="font-size: 120%;">
+                        <b>Floor</b>
+                        Lower Ground 
+                       </li>
+                        <li style="font-size: 120%;">
+                            <b>Type</b>
+                            Retail
+                        </li>
+                        <li style="font-size: 120%;">
+                            <b>Sizes</b>
+                            1200-3000 Sqft
+                        </li>
+                        <li style="font-size: 120%;">
+                            <b>PRICE </b>
+                            30k-40k
+                        </li>
+                    </ul>
+                    <div class="project-card-btn">
+                        <a id="a1" href="tel:+09999156255" class="default-btn default-sante-fe"
+                            style="color: white; background-color: #47663F; padding: 10px 47px; border-radius: 4px; list-style: none; text-decoration: none;">Call <i class='bx bx-right-arrow-alt'></i></a>
+                        <a onclick="toggleForm()" class="default-btn  active" style="background-color: #000; padding: 10px 20px; border-radius: 4px; list-style: none; text-decoration: none; color: white; white-space: nowrap;">Get
+                            Details
+                            <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+<div class="pricing2" id="pricing">
+  <h1>Price List</h1>
+  <div class="pricing1">
+    <div class="pricing">
+      <div class="bo12" style="font-weight: bold;">Floor</div>
+      <div class="bo12" style="font-weight: bold;">Type</div>
+      <div class="bo12" style="font-weight: bold;">Size</div>
+      <div class="bo12" style="font-weight: bold;">Price (per sqft.)</div> 
+      
+      <div class="bo12">Ground Floor</div>
+      <div class="bo12">Retail</div>
+      <div class="bo12">1200-3000</div>
+      <div class="bo12">38k-40k</div> 
+
+      <div class="bo12">1st Floor</div>
+      <div class="bo12">Retail</div>
+      <div class="bo12">800-2000</div>
+      <div class="bo12">22k-24k</div>
+
+      <div class="bo12">2nd Floor</div>
+      <div class="bo12">FOOD COURT</div>
+      <div class="bo12">600-1500</div>
+      <div class="bo12">18k-20k</div>
+
+      <div class="bo12">3rd Floor</div>
+      <div class="bo12">CINEMA/FEZ</div>
+      <div class="bo12">500-6000</div>
+      <div class="bo12">15k-18k</div>
+
+      <div class="bo12">4th</div> 
+      <div class="bo12">RESTAURANT</div>
+      <div class="bo12">200-3500</div>
+      <div class="bo12">13k-15k</div>
+    </div>
+  </div>
+</div>
+<div class="gl" id="gallery">
+    <h1>Gallery</h1>
+    <div class="gl3">
+    <div class="gl2">
+        <img src="img/elgl1.jpg" alt="Image 1">
+        <img src="img/elgl2.jpg" alt="Image 2">
+        <img src="img/elgl3.jpg" alt="Image 3">
+        <img src="img/elgl4.jpg" alt="Image 4">
+        <img src="img/elgl5.jpg" alt="Image 5">
+        <img src="img/elgls.jpg" alt="Image 6">
+    </div>
+</div>
+</div>
+<div class="fp container" id="floor-plan">
+    <h1 style="text-align: center;">Floor Plans</h1>
+    <div class="fp2">
+      <div class="tp">
+        <div class="tp1"><h2>Type I</h2></div>
+        <div class="tp2"><h2>Type II</h2></div>
+        <div class="button" style="white-space: nowrap;"><button onclick="toggleForm()">Get Detail</button></div>
+      </div>
+
+      <div class="sld">
+        <div class="slider">
+          <img class="slides" src="img/floorplan1.webp" alt="Floor Plan 1">
+          <img class="slides" src="img/floorplan2.jpg" alt="Floor Plan 2">
+
+          <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+          <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="md container-fluid">
+    <div class="md1">
+        <h2 style="white-space: nowrap;">Let's have a quick discussion with us ! </h2>
+    </div>
+    <div class="icn">
+      <a style="color: white;" href="https://wa.me/919999156255" target="_blank" title="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp" style="font-size: 2rem;"></i>
+      </a>
+      <a style="color: white;" href="tel:+919999156255" title="Call us">
+        <i class="fa-solid fa-phone-volume"></i>
+      </a>
+    </div>
+</div>
+<div class="amt container-lg" id="amenities">
+  <div class="amt67">
+    <h2 style="text-align: center; padding: 20px; font-size: 2.5rem; margin: 50px;">Amenities</h2>
+  </div>
+    <div class="amt3">
+    <div class="amt2">
+        <div class="bx" style="background-color: #47663F;"><img src="img/policeman.png"  alt=""><h3> 24x7<br>Security</h3></div>
+        <div class="bx"><img src="img/spaces.png" alt="" class="flt"><h3 style="color: rgb(74, 41, 41);">Ample <br> Parking Space</h3></div>
+        <div class="bx" style="background-color: #47663F;"><img class="flti" src="img/restaurant.png" alt=""><h3>Fine Dining<br>Restaurant</h3></div>
+        <div class="bx" style="color: rgb(74, 41, 41);"><img class="flt" src="img/table.png" alt="">
+        <h3>Food<br>Courts</h3></div>
+        <div class="bx" style="color: rgb(74, 41, 41);"><img class="flt" src="img/escalator.png" alt=""><h3>High Speed <br>Escalators</h3></div>
+        <div class="bx" style="background-color: #47663F;"><img  src="img/shopping-cart.png" alt=""><h3>Shopping <br>Paradise</h3></div>
+        <div class="bx" style="color: rgb(74, 41, 41);"><img class="flt" src="img/consultant.png" alt=""><h3>Professional<br>Maintenance</h3></div>
+        <div class="bx" style="background-color: #47663F;"><img src="img/generator.png" alt=""><h3>Power<br>
+          Backup</h3></div>
+    </div>
+</div>
+</div>
+<div class="hg container-fluid" id="highlights">
+    <div class="hg2 container">
+        <div class="img1">
+            <img src="img/elgl6.jpg" alt="">
+        </div>
+        <div class="hg3">
+            <h1 style="font-weight:500;">Highlights</h1>
+            <ul>
+            <li>Mix of F&B, retail, 5-star hotel multiplex &</li>
+            <li>First & finest mall of New Gurugram.</li>
+            <li>2 side open site for max visibility.</li>
+            <li>Spot gifts with every booking.</li>
+            <li>Investment starts at ₹1.3 cr onwards. </li>
+            <li>12% assured return till possession.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, </li>
+            <li>Convenient 40:30:30 payment plan.</li>
+          </ul>
+            <div class="btn3">
+            <button onclick="toggleForm()">Get Details</button>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="lc container-fluid" id="location">
+    <div class="lc1 container">
+        <div class="lc2" style="color: white; margin-top: 30px;">
+        <h1 style="color: white;">Location</h1>
+        <ul>
+        <li>Smooth connectivity with NH 48 ( Delhi Jaipur Highway )</li>
+        <li>Strategic positioning in Sector 82, Gurgaon</li>
+        <li>Few minutes from Dwarka Expressway</li>
+        <li>The 75-meter master road connecting various plush neighborhoods</li>
+        <li>There are suitable retail shops situated within the residential complexes in the sector.</li>
+      </ul>
+        <div class="btn4">
+            <button onclick="toggleForm()">Get Details</button>
+        </div>
+    </div>
+    <div class="fm">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13342.527291287932!2d77.0393729023262!3d28.411185662577697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d228f446b3881%3A0x9d798b7f0e65fcbc!2sSector%2049%2C%20Gurugram%2C%20Haryana%20122018!5e1!3m2!1sen!2sin!4v1728969360306!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+</div>
+<div class="ft container-fluid">
+    <div class="ft1 container">
+        <div class="ft2">
+             <p class="p65">
+              Marketed By Authorised Channel Partner
+              AGENT RERA REGISTRATION NO.:
+              NO. GGM/772/2018/376/EXT1/2024/37
+              (WWW.HARYANARERA.GOV.IN) 
+              <br>
+               <a class="diis" style=" cursor: pointer;color: blue;" id="openModalBtn">Disclaimer</a> 
+              </p>
+            <p class="p56">The content of this website is only for information purposes and does not belong to any official website of developer property. Prices mentioned are subject to change without notice and properties mentioned are subject to availability. All rights for logo & images are reserved to the developer. Thank you for visiting our website.</p>
+        </div>
+    </div>
+</div>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close23">&times;</span>
+    <h2 style="text-align: center;">DISCLAIMER</h2>
+    <p><strong>MAISON INFRATECH PVT. LTD. | CIN No.</strong></p>
+    <p style="font-size: 1rem;">Promoter urges every applicant to inspect the project site and shall not merely rely upon any architectural impression, plan or sales brochure and, therefore, requests to make personal judgment prior to submitting an application for allotment. The Project is being developed in phases, hence, certain facilities/amenities etc, may be used by allottee of other phases. Unless otherwise stated, all the images, visuals, materials and information contained herein are purely creative/artistic and may not be actual representations of the product and/or any amenities. Further, the actual design may vary in the fit and finished form, from the one displayed above. Journey time shown, if any, is based upon Google Maps which may vary as per the traffic at a relevant point of time. *Rate mentioned above does not include GST and other statutory charges, if applicable. T & C Apply. 1 sq. mt. = 10.7639 sq. ft.</p>
+  </div>
+</div>
+<div id="overla" onclick="closeForm()"></div>
+<div id="contactForm">
+    <button class="closeButton" onclick="closeForm()">X</button>
+    <h2>Contact Us!</h2>
+    <form action="#" name="submit-to-google-sheet1" method="post" onsubmit="return validation1()">
+        <input type="hidden" name="Formtype" value="PopupForm">
+        <input type="text" id="name1" name="Name" placeholder="Enter your name" required autocomplete="off">
+        <div class="e" id="nameError1"></div>
+        <input type="email" id="email1" name="Email" placeholder="Email*" required autocomplete="off">
+        <div class="e" id="emailError1"></div>
+        <input type="text" id="number1" name="Phone no." pattern="[0-9]*" inputmode="numeric" maxlength="10" placeholder="Phone no." required autocomplete="off">
+        <div class="e" id="numberError1"></div>
+        <input type="text" pattern="[0-9]*" id="budget1" name="Budget" inputmode="numeric" placeholder="Budget*" required autocomplete="off">
+        <div class="e" id="budgetError1"></div>
+        <button type="submit" name="submit" id="btn_contact">
+            <span class="button-text">Submit</span>
+            <div class="spinnr" id="spinner_contact"></div> 
+        </button>
+    </form>
+</div>
+<section class="lstf">
+  <div class="lstf2">
+      <div class="l2 container" id="myForm">
+        <form action="#" name="submit-to-google-sheet" method="post" onsubmit="return validation()">
+            <div class="err">
+              <div class="l1" style="white-space: nowrap;">
+                <h2 style="font-size: 1.8rem;">Get The Best Deal</h2>
+              </div>
+                <div class="err2">
+                  <input type="hidden" name="Formtype" value="FooterForm">
+                    <input type="text" id="name" name="Name" placeholder="Enter Your Name" required autocomplete="off">
+                    <div class="e" id="nameError"></div>
+                </div>
+                <div class="err2">
+                  <input type="email" id="email" name="Email" placeholder="Email" required autocomplete="off">
+                  <div class="e" id="emailError"></div>
+              </div>
+              <div class="err2">
+                <input type="text" id="number" name="Phone no." pattern="[0-9]*" inputmode="numeric" placeholder="Phone no." maxlength="10" required autocomplete="off">
+                <div class="e" id="numberError"></div>
+            </div>
+                <div class="err2">
+                  <input style="width: 3%;" type="text" id="budget" name="Budget" placeholder="Budget*" inputmode="numeric" pattern="[0-9]*" required autocomplete="off">
+                  <div class="e" id="budgetError"></div>
+                </div>
+                <div class="err2 button-container">
+                    <button type="submit" id="btn_main" name="submit" id="btntext">
+                        Submit
+                        <div class="spinner" id="spinner"></div> 
+                    </button>
+                </div>
+            </div>
+         </form>
+      </div>
+  </div>
+</section>
+<section class="enq1">
+  <div class="enq2">
+  <h2 onclick="toggleForm()">Enquire Now</h2>
+  </div>
+</section>
+<section class="enq">
+  <button class="btn66" onclick="toggleForm()">Enquire Now</button>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"></script>
+  <script>
+    const modal = document.getElementById('modal');
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+
+    openModalBtn.onclick = function() {
+      modal.style.display = 'block';
+    }
+
+    closeModalBtn.onclick = function() {
+      modal.style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = 'none';
+      }
+    }
+  </script>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+
+      setTimeout(showSlides, 2000); 
+    }
+
+    function changeSlide(n) {
+      slideIndex += n - 1;
+      showSlides();
+    }
+
+    function currentSlide(n) {
+      slideIndex = n;
+      showSlides();
+    }
+  </script>
+   <script>
+    function toggleForm(){
+    var form = document.getElementById("contactForm");
+    var overlay = document.getElementById("overla");
+
+    if (form.style.display === "none" || form.style.display === "") {
+      form.style.display = "block";
+      overlay.style.display = "block"; 
+    } else {
+      closeForm();
+    }
+  }
+  function closeForm(){
+    document.getElementById("contactForm").style.display = "none";
+    document.getElementById("overla").style.display = "none";
+  }
+</script>
+<script>
+function updateSelectColor(select){
+if(select.value !== "") {
+  select.style.color = "black"; 
+} 
+else{
+  select.style.color = "#acacac"; 
+}
+}
+</script>
+ <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwHtUF2Y4xZgyuouNphQfFfjuhiEGQPLqodbuxTIj_lN-CO8rU6EZL51AKpcJQuOXKE_A/exec';
+  
+  const form = document.forms['submit-to-google-sheet'];
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    if(validation()){
+        const spinner = document.getElementById('spinner');
+        const btntxt = document.getElementById('btntext')
+        spinner.style.display = 'block'; 
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            console.log('Success!', response);
+            form.reset();
+            window.location.href='Thankyou.html';
+          })
+          .catch(error => {
+            console.error('Error!', error.message);
+            alert('There was an error submitting the form.'); 
+          })
+          .finally(() => {
+            spinner.style.display = 'none'; 
+          });
+    }
+  });
+
+  function validation(){
+      let name = document.getElementById("name").value;
+      let phone = document.getElementById("number").value;
+      let email = document.getElementById("email").value;
+      let isValid = true;
+      let regex = /^[a-zA-Z\s]+$/;
+
+      document.getElementById("nameError").textContent = "";
+      document.getElementById("numberError").textContent = "";
+      document.getElementById("emailError").textContent = "";
+
+      if (!isNaN(name)) {
+          document.getElementById("nameError").textContent = "Invalid Name";
+          isValid = false;
+      }
+      if (name.length < 3 || name.length > 20) {
+          document.getElementById("nameError").textContent = "Invalid Name";
+          isValid = false;
+      }
+      if (!regex.test(name)) {
+          document.getElementById("nameError").textContent = "Invalid Name";
+          isValid = false;
+      }
+      if (isNaN(phone) || phone.length != 10) {
+          document.getElementById("numberError").textContent = "Enter Phone no. without Country code";
+          isValid = false;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.includes('@')){
+          document.getElementById("emailError").textContent = "Please enter a valid email address.";
+          isValid = false;
+      }
+      return isValid;
+  }
+</script>
+ <script>
+  const scriptURL1 = 'https://script.google.com/macros/s/AKfycbwHtUF2Y4xZgyuouNphQfFfjuhiEGQPLqodbuxTIj_lN-CO8rU6EZL51AKpcJQuOXKE_A/exec';
+  const form1 = document.forms['submit-to-google-sheet1'];
+  form1.addEventListener('submit', e => {
+      e.preventDefault();
+      if (validation1()) {
+          const spinner = document.getElementById('spinner_contact');
+          const buttonText = document.querySelector('#btn_contact .button-text');
+
+          spinner.style.display = 'block';
+          fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+              .then(response => {
+                  console.log('Success!', response);
+                  form1.reset();
+                  window.location.href = 'Thankyou.html';
+              })
+              .catch(error => {
+                  console.error('Error!', error.message);
+                  alert('There was an error submitting the form.'); 
+              })
+              .finally(() => {
+                  spinner.style.display = 'none'; 
+              });
+        }
+  });
+
+  function validation1() {
+      let name = document.getElementById("name1").value;
+      let phone = document.getElementById("number1").value;
+      let email = document.getElementById("email1").value;
+      let isValid = true;
+      let regex = /^[a-zA-Z\s]+$/;
+
+      document.getElementById("nameError1").textContent = "";
+      document.getElementById("numberError1").textContent = "";
+      document.getElementById("emailError1").textContent = "";
+
+      if (!isNaN(name)) {
+          document.getElementById("nameError1").textContent = "Invalid Name";
+          isValid = false;
+      }
+      if (name.length < 3 || name.length > 20) {
+          document.getElementById("nameError1").textContent = "Invalid Name";
+          isValid = false;
+      }
+      if (!regex.test(name)) {
+          document.getElementById("nameError1").textContent = "Invalid Name";
+          isValid = false;
+      }
+  
+      if (isNaN(phone) || phone.length != 10) {
+          document.getElementById("numberError1").textContent = "Enter Phone no. without Country code";
+          isValid = false;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email.includes('@')) {
+          document.getElementById("emailError1").textContent = "Please enter a valid email address.";
+          isValid = false;
+      }
+      return isValid;
+  }
+</script>
+  <script>
+    const scriptURL2 = 'https://script.google.com/macros/s/AKfycbwHtUF2Y4xZgyuouNphQfFfjuhiEGQPLqodbuxTIj_lN-CO8rU6EZL51AKpcJQuOXKE_A/exec';
+    const form2 = document.forms['submit-to-google-sheet2'];
+
+    form2.addEventListener('submit', e => {
+        e.preventDefault();
+        if (validation2()) {
+            const spinner = document.getElementById('spinner2');
+            const button = document.querySelector('.btn678');
+
+            spinner.style.display = 'block'; 
+            button.style.pointerEvents = 'none';
+
+            fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+                .then(response => {
+                    console.log('Success!', response);
+                    form2.reset();
+                    window.location.href = 'Thankyou.html';
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert('There was an error submitting the form.');
+                })
+                .finally(() => {
+                    spinner.style.display = 'none'; 
+                    button.style.pointerEvents = 'auto'; 
+                });
+        }
+    });
+
+    function validation2() {
+        let name = document.getElementById("name2").value;
+        let phone = document.getElementById("phone2").value;  
+        let email = document.getElementById("email2").value;
+        let isValid = true;
+        let nameRegex = /^[a-zA-Z\s]+$/;
+
+        document.getElementById("nameError2").textContent = "";
+        document.getElementById("phoneError2").textContent = ""; 
+        document.getElementById("emailError2").textContent = "";
+
+        if (!nameRegex.test(name) || name.length < 3 || name.length > 20) {
+            document.getElementById("nameError2").textContent = "Invalid Name";
+            isValid = false;
+        }
+        if (isNaN(phone) || phone.length != 10) {
+            document.getElementById("phoneError2").textContent = "Enter a valid 10-digit phone number.";
+            isValid = false;
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            document.getElementById("emailError2").textContent = "Please enter a valid email address.";
+            isValid = false;
+        }
+
+        return isValid;
+    }
+</script>
+
+ 
+</body>
+</html>
